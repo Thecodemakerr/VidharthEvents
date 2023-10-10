@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+	
+    <link rel="stylesheet" href="stylesheet/bootstrap.css">
+    <link rel="stylesheet" href="stylesheet/shortcodes.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/responsive.css">
+    <link rel="stylesheet" href="stylesheet/jquery.fancybox.css">
+    <link rel="stylesheet" href="stylesheet/owl.carousel.css">
+    <link rel="stylesheet" href="stylesheet/animsition.html">
+    <link rel="stylesheet" href="stylesheet/animate.css">
+    <link rel="stylesheet" href="stylesheet/icomoon.css">
+    
+    <link rel="shortcut icon" href="icon/favicon.png">
+
+    <title>Welcome to Vidharth Enterprise</title>
+	<style>
+		.header .main-header {
+    padding: 0px 0 28px 0;
+    position: relative;
+}
+.section-partner .thumb {
+    width: 190px;
+    background: #fff;
+    padding: 2px 5px;
+    margin: 0px 0px;
+    border-radius: 2px;
+}
+.section-work .list-box-work .box-work {
+	width: 33%;}
+		.footer .section-main-footer .list-footer .widget-link {
+    width: 26%;
+}
+		.section-work.style-2 .list-box-work .box-work {
+    width: 33%;
+}
+	
+.section-counter .list-counter .themesflat-content-box .counter-item {
+    padding: 0 0px;
+}	
+		
+.header {
+    position: relative;
+    z-index: 9999;
+    background: #000000a6;
+}
+	.header .main-header .main-nav .sub-menu {
+		width: 289px;}	
+		
+		ul.sub-menu li {
+    border-bottom: 1px solid #e2e1e1;
+    padding: 9px 0px;
+}
+.header .main-header .main-nav .sub-menu li a:hover, .header .main-header .main-nav #main-nav .sub-menu li.current-item a {
+    color: #ffa800;
+    background: #000;
+    padding: 14px 12px;
+}
+		.header .main-header .main-nav .sub-menu li a {
+			padding: 14px 17px;}
+		
+		
+		div#site-logo img {
+    width: 92px;
+}
+		.header .main-header .main-header-logo {
+    padding-top: 0px;
+}
+.header .main-header {
+    padding: 0px 0 0px 0;
+    position: relative;
+}
+		
+#marq img {
+    width: 190px;
+    background: #fff;
+    padding: 2px 5px;
+    margin: 2px 0px;
+    border-radius: 2px;
+}
+li span#hd-1 {
+    text-shadow: #ffc700 -4px 1px 12px;
+}
+li #text-1 {
+    color: #ffffff !important;
+    text-shadow: #000 0px 0px 4px;
+    font-size: 23px !important;
+}
+.about-ick strong {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+}		
+		
+		.about-ick {
+    font-family: 'Open Sans', sans-serif;
+}
+		
+		.about-ick ul li {
+    line-height: 25px;
+    text-indent: -12px;
+    font-size: 16px;
+    color: #11161e;
+    text-align: justify;
+    line-height: 32px;
+}
+.about-ick ul li i {
+    font-size: 12px;
+    margin-right: 4px;
+    color: #ffa800;
+}		
+
+@media only screen and (max-width: 600px) {
+  .section-work .list-box-work .box-work {
+	width: 100%;}
+		.footer .section-main-footer .list-footer .widget-link {
+    width: 100%;
+}
+	
+	.section-partner .thumb {
+  width: 132px;
+  padding: 4px 9px;
+  margin: 2px 0px;
+}
+			.section-work.style-2 .list-box-work .box-work {
+    width: 100%;
+}
+	
+#hd {
+  font-size: 46px !important;
+}
+}
+
+	</style>
+	
+	<style>
+	.tab-content > .active {
+    display: contents;
+}
+	</style>
+<style>
+
+.tab {
+/*
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+*/
+}
+
+/* Style the buttons inside the tab */
+.tab li {
+  background-color: rgba(22, 37, 66, 0.07);
+    border: none;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Karla", sans-serif;
+    color: #162542;
+    padding: 15px 55px;
+    margin-bottom: 15px;
+	float: left
+}
+
+/* Change background color of buttons on hover */
+.tab li:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab li.active {
+    background-color: #162542;
+    border: none;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Karla", sans-serif;
+    color: #ffffff;
+    padding: 15px 55px;
+    margin-bottom: 15px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+/*  border: 1px solid #ccc;*/
+  border-top: none;
+}
+	.tab li.active:after {
+    bottom: -55px;
+    left: -50%;
+    content: "";
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #162542;
+    transition: all 0.3s ease-out 0s;
+}
+	.tab li.tablinks:after {
+    position: relative;
+    bottom: -55px;
+    left: -50%;
+    content: "";
+    transform: translateX(-50%);
+    /* width: 0; */
+    /* height: 0; */
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+/*    border-top: 15px solid #b68c5a;*/
+    transition: all 0.3s ease-out 0s;
+    z-index: 999999999999999;
+}
+	
+	
+	.india-storys li {
+    float: left;
+    font-size: 21px;
+    border-left: 2px solid #ffa800;
+    padding: 5px 8px;
+    text-transform: capitalize;
+    width: 20%;
+}
+		.section-work.style-2 .list-box-work .box-work:nth-child(6) {
+    margin-top: 0px;
+}
+		.box-video .box {
+    position: relative;
+    background: url("images/background/workshop.png") no-repeat;
+    background-position: center center;
+    border: 20px solid #fff;
+    padding: 63px 0 350px 0;
+    background-color: #cccccc;
+    box-shadow: 0px 24px 60px 0px rgb(0 0 0 / 5%);
+	background-size: contain
+}		
+	.section-work.style-2 .list-box-work .box-work:nth-child(5) {
+    margin-top: 0px;
+}
+.section-work.style-2.style-3 {
+    background: #f3f3f400;
+}	
+.section-work.style-2 .list-box-work .box-work .box-item {
+    margin-left: 0px;
+}
+	.section-work.style-2 .list-box-work {
+    text-align: center;
+}
+</style>
+	<style>
+	.page-title {
+    background: url(images/slider/bg-slide-3.jpg) no-repeat;
+		    background-size: cover;
+}
+		.tf-section {
+    padding: 68px 0;
+}
+.row.flex-column-reverse.flex-lg-row h3 {
+    margin-top: 22px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-bottom: 16px;
+}	
+		
+	.tabbox-bg	{box-shadow: #00000012 0px 0px 9px;
+    border-radius: 10px;
+		padding: 3px 25px;}	
+	</style>	
+	
+</head>
+<body>
+    <div id="wrapper" class="animsition">
+        <header id="site-header" class="header"  style="width: 100%;">
+<!--            <img class="img-top-page" src="images/img-top-slider.png" alt="">-->
+            <div id="site-header-inner" class="main-header">
+                <div class="wrap-inner container-fluid">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                                <div class="main-header-logo" id="site-logo">
+                                    <a href="index-2.html">
+                                        <img src="images/logo-2.png" alt="At Vidharth">
+                                    </a>
+                                </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="mobile-button">
+                                <span></span>
+                            </div>
+                            <!-- /.mobile-button -->
+                            <nav id="main-nav" class="main-nav">
+                                <ul id="menu-primary-menu" class="menu">
+                                    <li class="menu-item menu-item-has-children">
+                                        <a class="menu-main" href="index-2.html">Home</a> </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a class="menu-main" href="about.html">About</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a class="menu-main" href="#">Services</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item current-item">
+                                                <a href="exhibition-custom-stand-design.html">Exhibition / Custom Stand Design</a>
+                                            </li>
+                                            <li class="menu-item"><a href="events-brand-promotions.html">Events / Brand Promotions</a></li>
+                                            <li class="menu-item"><a href="retail-interiors.html">Retail / Interiors</a></li>
+                                            <li class="menu-item"><a href="wedding-private-punctions.html">Weddings / Private Functions</a></li>
+                                            <li class="menu-item"><a href="creative-av-flim.html">Creative / AV Flim</a></li>
+                                            <li class="menu-item"><a href="mic-corporate-offsite.html">Mice / Corporate Offsite</a></li>
+                                        </ul>
+                                    </li>
+									<li class="menu-item menu-item-has-children"><a class="menu-main" href="achievement.html">achievement</a></li>
+									<li class="menu-item menu-item-has-children">
+                                        <a class="menu-main" href="case-studies.html">Case Studies</a> </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a class="menu-main" href="clientele.html">CLIENTELE</a> </li>
+									<li class="menu-item menu-item-has-children">
+                                        <a class="menu-main" href="#">GALLERY</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item current-item">
+                                                <a href="gallery.html">Exhibition/Custom Stand Design</a>
+                                            </li>
+                                            <li class="menu-item"><a href="gallery1.html">Events/Brand Promotion</a></li>
+                                            <li class="menu-item"><a href="gallery2.html">Retail/Interiors</a></li>
+                                            <li class="menu-item"><a href="gallery3.html">Activations</a></li>
+                                            <li class="menu-item"><a href="gallery4.html">Weddings/Private Functions</a></li>
+                                        </ul>
+                                    </li>
+									
+                                    <li class="menu-item menu-item-has-children"><a class="menu-main" href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav> 
+                        </div>
+                        <div class="col-auto">
+                            <div class="main-header-contact">
+                                <div class="text-phone">
+                                    <p>Phone Services</p>
+                                    <a href="#"><span>+91-8448414133</span></a>
+                                </div>
+                                <a href="#" class="call"><img src="images/icon/phone-call.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Title -->
+        <section class="page-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-page">
+                            <h2 class="title wow fadeInDown"><span>About Us</span>  </h2>
+                            <div class="btn-main wow fadeInLeft" data-wow-delay="400ms">
+<!--
+                                <a href="about.html">
+                                    <span class="more">DISCOVER MORE
+                                        <span class="icon"><i class="fas fa-plus"></i></span>
+                                    </span>
+                                </a>
+-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section About -->
+        <section class="section-about">
+            <div class="container">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-md-12 col-lg-12">
+                        <div class="intro-content padding-top-120 wow fadeInLeft">
+                            <h4 class="sub-title">About Us</h4>
+                            <h3 class="title no-margin">
+                                <span>WHO WE ARE</span>
+                            </h3>
+							
+							<p class="text"><img src="images/about.jpg" alt="Hamela">
+								<p>At Vidharth, we are one of the best event and exhibition planning companies all across the globe.</p>
+
+<p>In a time where more and more companies are hosting events and exhibitions, it can be challenging to get a message across to the audience. Therefore, we at Vidharth, take a thoughtful and creative style to develop unforgettable experiences that stir up feelings, sentiments, and conversations.</p>
+
+<p>We, at Vidharth, not only specialize in producing ground-breaking, classy, and breathtaking events and exhibitions but also use our approach to create custom Stand Design, AV Films, and Retails Interiors.</p>
+
+<p>We, boast of a diverse team of event and exhibition planners, media, and PR people. So, no matter what kind of a need your business has, we pride ourselves on delivering a first-class service to each and every one of our clients.</p>
+				
+<div class="about-ick">	
+	<strong>Our Mission</strong>
+<ul>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> Our mission is to create the world's most meaningful and memorable experiences, and to meet and exceed the expectations of our clients through ground-breaking concepts and the delivery of outstanding service.</li></ul>
+
+
+<strong>Our Vision</strong>
+<ul>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> To be the top Event Exhibitions Management Company, and help our clients attain their goal through the development and execution of tailored and accurately planned events and exhibitions.</li></ul>
+
+<strong>Our Principals</strong>
+<ul>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> 
+At Vidharth, we always put your organization first. We approach every project with care and accuracy. Irrespective of the size and scope, we treat every event and exhibition as an opportunity to display your brand, thus, develop an all-inclusive plan to make sure that your event and exhibition happen on time and within budget. At Vidharth, we make it a point to first learn about your business, we understand your challenges, and we plan events and exhibitions to fulfill your objectives.</li></ul>
+
+<strong>Our Team</strong><br>
+
+<ul>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> Our team of highly experienced and dedicated professionals at Vidharth understands that a well-executed event and exhibition can help an organization or an individual to achieve their strategic vision, and gain more and more clients. That is why our experts try their best to get to know your company inside and out and manage each aspect to organise excellent event and exhibition.</li></ul>
+
+<strong>Our strength</strong>
+	<ul>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> 
+We have a highly experienced team of veteran industry professionals, which makes sure that your event and exhibition goes right the first time</li>
+	
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> We are proficient when it comes to designing the entire event and exhibition and including important branding elements flawlessly.</li>
+	
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> We are completely transparent and will never make false promises to our clients.</li>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> We have a huge pool and vendors and other important people in our contact</li>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> An event and/or exhibition planned by us will give your sales team an opportunity to shine and attract the right people.</li>
+<li><i class="fa fa-arrow-right" aria-hidden="true"></i> Our huge experience in the industry ensures that all your employees and clients will always be happy with you.</li></ul></div>
+							</p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+ <section class="section-about">
+            <div class="container">
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-md-12 col-lg-12">
+                        <div id="iabimg">
+							  <div>
+
+<div class="tab">
+	<ul style="margin: 13px 0px  0px 0px ">
+  <li class="tablinks" onclick="openCity(event, 'india-story')">India Story</li>
+  <li class="tablinks" onclick="openCity(event, 'what-we-do')">What We Do</li>
+  <li class="tablinks" onclick="openCity(event, 'our-approach')">Our Approach</li>
+	<li class="tablinks" onclick="openCity(event, 'workshop')">Workshop</li>
+	</ul>
+</div>
+<div class="clearfix"></div>
+<div class="tabbox-bg">							  
+<div id="india-story" class="tabcontent" style="display: block;">
+  <h3>India Story</h3>
+  <section class="tf-section section-work style-2 style-3">
+	<div class="list-box-work">
+                        <div class="box-work wow fadeInUp text-wrap" style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item number-wrap active">
+                                <span class="number">2</span>
+                                <h6 class="title-box"><a href="#">Regional Offices </a></h6>
+                                
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span class="number">13</span>
+                                <h6 class="title-box"><a href="#">Auxiliary Offices</a></h6>
+                                
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span class="number">20+</span>
+                                <h6 class="title-box"><a href="#">Payroll Employees</a></h6>
+                                
+                            </div>
+                        </div><div class="box-work wow fadeInUp" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span class="number">250+ </span>
+                                <h6 class="title-box"><a href="#">years of experience in delivering brand experiences </a></h6>
+                                
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span class="number">1000+</span>
+                                <h6 class="title-box"><a href="service-details.html">successful brand projects executed </a></h6>
+                            </div>
+                        </div>
+						
+                    </div>
+	  <hr>
+	<div class="india-storys">
+				<ul >
+				<li>Delhi NCR </li>
+				<li>Mumbai </li>
+				<li>ahmedabad </li>
+				<li>bengaluru</li>
+				<li>chandigarh</li>
+				<li>chennai</li>
+				<li>cochin</li><br>
+				<li>guwahati</li>
+				<li>hyderabad </li>
+				<li>indore</li>
+				<li>jaipur</li>
+				<li>kolkata</li>
+				<li>lucknow</li>
+				<li>pune</li>
+				<li>ranch</li>
+				
+</ul></div>
+	</section>
+</div>
+
+<div id="what-we-do" class="tabcontent">
+  <h3>What We Do</h3>
+  <section class="tf-section section-work style-2 style-3 ">
+                    <div class="list-box-work">
+                        <div class="box-work wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/what-1.png" alt=""></span>
+                                <p class="text">consumer experiences
+guerilla marketing
+product launches, media & corporate events
+exhibitions creative ooh solutions
+pr stunts & viral marketing
+content creation
+</p>
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/what-2.png" alt=""></span>
+                                <p class="text">sampling & field marketing
+retail experiences
+pop-up shops
+pos communications strategy & creative
+product road shows
+Mall , Multiplex & Corporate Park etc… 
+</p>
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/what-3.png" alt=""></span>
+                                <p class="text">private-public sector alliances
+public sector comms consultancy
+co-branding & brand partnership strategy
+new media format development
+</p>
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/what-4.png" alt=""></span>
+                                <p class="text">sports sponsorship activation
+sponsorship consultancy, strategy & creative
+hospitality
+ambassadors
+sponsorship education & master classes
+</p>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+</div>
+
+<div id="our-approach" class="tabcontent">
+  <h3>Our Approach</h3>
+<section class="tf-section section-work style-2 style-3">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="list-box-work">
+                        <div class="box-work wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/approach-1.png" alt=""></span>
+                                <h6 class="title-box"><a href="service-details.html">we research </a></h6>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/approach-2.png" alt=""></span>
+                                <h6 class="title-box"><a href="service-details.html">we listen </a></h6>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp" data-wow-delay="800ms" style="visibility: visible; animation-delay: 800ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/approach-3.png" alt=""></span>
+                                <h6 class="title-box"><a href="service-details.html">we plan </a></h6>
+                                
+                                
+                            </div>
+                        </div>
+                        <div class="box-work wow fadeInUp" data-wow-delay="1200ms" style="visibility: visible;animation-delay: 1200ms;animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/approach-4.png" alt=""></span>
+                                <h6 class="title-box"><a href="service-details.html">we conceptualize </a></h6>
+                                
+                                
+                            </div>
+                        </div><div class="box-work wow fadeInUp" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/approach-5.png" alt=""></span>
+                                <h6 class="title-box"><a href="service-details.html">we implement </a></h6>
+                                
+                                
+                            </div>
+                        </div><div class="box-work wow fadeInUp" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;">
+                            <div class="divider-left"></div>
+                            <div class="box-item">
+                                <span><img src="images/icon/approach-6.png" alt=""></span>
+                                <h6 class="title-box"><a href="service-details.html">we evaluate
+</a></h6>
+                                
+                                
+                            </div>
+                        </div>
+						
+                    </div>
+					<hr id="divider">
+					<p class="text">our expertise comprises a talented mix of brand strategists, creatives, innovators and producers who use specialist tools to create strategic, relevant solutions that can be measured and evaluated, delivering better and more consistent results. </p>
+                </div>
+            </div>
+        </section>
+</div>		  
+								  
+	<div id="workshop" class="tabcontent">
+  <h3>Workshop </h3>
+  <div class="box-video wow fadeInUp" data-wow-delay="400ms" style="visibility: visible; animation-delay: 400ms; animation-name: fadeInUp; margin-top: 0px; padding-left: 0px; padding-right: 0px;">
+                         <div class="img-blog v1 wow fadeInUp mt-5" style="visibility: visible; animation-name: fadeInUp;">
+                                    <img src="images/workshop.jpg" alt="">
+                                </div>
+                        </div>
+</div>							  
+								  
+	</div>						  
+  
+</div>
+						</div>
+						</div>
+						</div>
+						</div>
+							
+							</section>
+	<div class="clearfix">&nbsp;</div>
+        <footer class="footer">
+            <img class="img-ft" src="images/img-footer.png" alt="">
+            <img class="img-ft-2" src="images/img-footer-2.png" alt="">
+            <!-- Main Footer -->
+            <section class="tf-section section-main-footer">
+                <div class="overlay"></div>
+                <div class="container z-index">
+                    <div class="row">
+                        <div class="list-footer">
+                        
+                            <div class="widget-link v1">
+                                <h6 class="widget-title">SERVICES</h6>
+                                <ul class="list-wrap">
+                                    <li><a href="exhibition-custom-stand-design.html">Exhibition / Custom Stand Design</a></li>
+                                    <li><a href="events-brand-promotions.html">Events / Brand Promotions</a></li>
+                                    <li><a href="retail-interiors.html">Retail / Interiors</a></li>
+                                    <li><a href="wedding-private-punctions.html">Weddings / Private Functions</a></li>
+                                    <li><a href="creative-av-flim.html">Creative / AV Flim</a></li>
+                                    <li><a href="mic-corporate-offsite.html">Mice / Corporate Offsite</a></li>
+                                </ul>
+                            </div>
+                        
+                       
+                            <div class="widget-link v2">
+                                <h6 class="widget-title">GALLERY</h6>
+                                <ul class="list-wrap">
+                                    <li><a href="gallery.html">Exhibition/Custom Stand Design</a></li>
+                                    <li><a href="gallery1.html">Events/Brand Promotion</a></li>
+                                    <li><a href="gallery2.html">Retail/Interiors</a></li>
+                                    <li><a href="gallery3.html">Activations</a></li>
+                                    <li><a href="gallery4.html">Weddings/Private Functions</a></li>
+                                </ul>
+                            </div>
+                       
+                    
+                            <div class="widget-link v3">
+                                <h6 class="widget-title">Quick Links</h6>
+                                <ul class="list-wrap">
+                                    <li><a href="index-2.html">HOME</a></li>
+                                    <li><a href="about.html">ABOUT US</a></li>
+                                    <li><a href="achievement.html">ACHIEVEMENT</a></li>
+                                    <li><a href="case-studies.html">CASE STUDIES</a></li>
+                                    <li><a href="clientele.html">CLIENTELE</a></li>
+                                    <li><a href="contact.html">CONTACT US</a></li>
+                                </ul>
+                            </div>
+               
+                     <div class="widget-about widget-link v3">
+                              <h6 class="widget-title">Contact</h6>
+                             	  <div class="location" style="    margin-top: 33px;">
+                                    <div class="icon-location">
+                                        <img src="images/icon/location.png" alt="" style="padding: 20px 0px;">
+                                    </div>
+                                    <p class="title">Vidharth Enterprise
+														Plot 99/10, Ladrey Mohalla
+														Jonapur, New Delhi-110047</p>
+                                   
+                                </div>
+						  <br>
+                                <div class="location">
+                                    <div class="icon-location">
+                                        <img src="images/icon/phone-call.png" alt="" style="    width: 22px; padding: 13px 0px;">
+                                    </div>
+									<p class="title">+91-9795440451 <br>+91-9795440451 <br>+91-9795440451</p>
+                     	              
+                                </div>
+						 <br>
+						 <div class="location">
+                                    <div class="icon-location">
+                                        <img src="images/icon/email.png" alt="" style="width: 31px; margin-top: -31px;">
+                                    </div>
+                                    <p class="title">info@vidharth.com</p>
+                                   
+                                </div>
+						
+					
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Bottom Footer -->
+            <section class="bottom-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="copyright">
+                                <p>© 2022 Vidharth   <span>Enterprise.</span> All Rights Reserved.  </p>
+                            </div>
+                        </div>
+<!--
+                        <div class="col-md-6">
+                            <div class="flat-text-right">
+                                <ul class="list">
+                                    <li class="li"><a href="#">Privacy</a></li>
+                                    <li class="li"><a href="#">Terms & Conditions</a></li>
+                                    <li class="li"><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+-->
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+        <a id="scroll-top">
+            <i class="fas fa-level-up-alt"></i>
+        </a>
+
+        <!-- Javascript -->
+
+	
+
+	<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+	
+	
+	
+	
+        <script src="../use.fontawesome.com/a5749b4813.js"></script>
+
+        <script src="javascript/jquery.min.js"></script>
+        <script src="javascript/countto.js"></script>
+        <script src="javascript/plugins.js"></script>
+        <script src="javascript/shortcodes.js"></script>
+        <script src="javascript/jquery.fancybox.js"></script>
+        <script src="javascript/main.js"></script>
+        <script src="javascript/owl.carousel.min.js"></script>
+        <script src="javascript/animsition.js"></script>
+        <script src="javascript/wow.min.js"></script>
+
+<!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+  <script src="../maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <!-- Revolution Slider -->
+        <script src="includes/rev-slider/js/jquery.themepunch.tools.min.js"></script>
+        <script src="includes/rev-slider/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="javascript/rev-slider.js"></script>
+        <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->  
+        <script src="includes/rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="includes/rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+        
+
+</body>
+
+</html>
